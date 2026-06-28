@@ -60,7 +60,8 @@ const tours = [
     country: "Франція",
     days: 5,
     price: 1100,
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+   
 }
 ];
 
