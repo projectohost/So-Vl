@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог турів</title>
+
+    <link rel="stylesheet" href="catalog.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-content">
+        <h1>🌍 Каталог турів</h1>
+        <p>Знайди свою ідеальну подорож</p>
+
+        <!-- НАВІГАЦІЯ -->
+        <nav class="nav">
+            <a href="catalog.html"><i class="fa fa-home"></i> Каталог</a>
+            <a href="favorites.html"><i class="fa fa-heart"></i> Обране</a>
+            <a href="booked.html"><i class="fa fa-clipboard-list"></i> Заброньовано</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- ФІЛЬТРИ -->
+<section class="filters">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Пошук туру..."
+    >
+
+    <select id="country">
+        <option value="all">Усі країни</option>
+        <option value="Туреччина">Туреччина</option>
+        <option value="Єгипет">Єгипет</option>
+        <option value="Італія">Італія</option>
+        <option value="Греція">Греція</option>
+        <option value="Іспанія">Іспанія</option>
+        <option value="Франція">Франція</option>
+    </select>
+
+    <input
+        type="number"
+        id="minPrice"
+        placeholder="Мін. ціна"
+    >
+
+    <input
+        type="number"
+        id="maxPrice"
+        placeholder="Макс. ціна"
+    >
+
+    <!-- 👥 ЗАМІСТЬ СОРТУВАННЯ -->
+    <input
+        type="number"
+        id="people"
+        placeholder="👥 Кількість людей"
+       
+    >
+
+</section>
+
+<!-- КАТАЛОГ -->
+<section>
+
+    <div id="catalog" class="catalog"></div>
+
+</section>
+
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span id="close">&times;</span>
+
+        <h2>Бронювання туру</h2>
+
+        <p id="tourName"></p>
+
+        <input
+            type="text"
+            placeholder="Ваше ім'я"
+            id="clientName"
+        >
+
+        <input
+            type="tel"
+            placeholder="Телефон"
+            id="clientPhone"
+        >
+
+        <button id="bookBtn">
+            Підтвердити бронювання
+        </button>
+
+    </div>
+
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast">
+    ✔ Бронювання оформлено
+</div>
+
+<script src="catalog.js"></script>
+
+</body>
+</html>
