@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка | Туристична агенція</title>
+    </head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" alt="Логотип ТА">
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#hero">Головна</a></li>
+                <li><a href="#tours">Гарячі путівки</a></li>
+                <li><a href="#services">Послуги та Про нас</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="header-contacts">
+            <a href="tel:+380000000000" class="btn-phone">+38 (000) 000-00-00</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Світ чекає на тебе. Знайди свій ідеальний відпочинок</h1>
+                <p>Найкращі пропозиції та незабутні емоції за кілька кліків</p>
+                
+                <form class="tour-search-form">
+                    <div class="form-group">
+                        <label for="destination">Куди:</label>
+                        <input type="text" id="destination" placeholder="Країна, місто або готель">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Коли:</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Кількість ночей:</label>
+                        <select id="duration">
+                            <option value="7">7-9 ночей</option>
+                            <option value="10">10-12 ночей</option>
+                            <option value="14">14+ ночей</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Знайти тур</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="tours" class="tours-section">
+            <h2>Гарячі путівки та популярні напрямки</h2>
+            
+            <div class="tours-filter">
+                <button class="active">Гарячі тури</button>
+                <button>Пляжний відпочинок</button>
+                <button>Екскурсії</button>
+            </div>
+
+            <div class="tours-grid">
+                <article class="tour-card">
+                    <img src="egypt.jpg" alt="Відпочинок в Єгипті">
+                    <div class="tour-card-content">
+                        <span class="badge-hot">Гарячий!</span>
+                        <h3>Шарм-ель-Шейх, Єгипет</h3>
+                        <p class="hotel-rating">★★★★★</p>
+                        <p class="tour-details">7 ночей • Все включено • Виліт з Варшави</p>
+                        <div class="tour-price">
+                            <span class="old-price">24 000 грн</span>
+                            <span class="current-price">18 500 грн</span>
+                        </div>
+                        <a href="#" class="btn-details">Детальніше</a>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <img src="turkey.jpg" alt="Відпочинок в Туреччині">
+                    <div class="tour-card-content">
+                        <h3>Анталія, Туреччина</h3>
+                        <p class="hotel-rating">★★★★</p>
+                        <p class="tour-details">9 ночей • Все включено • Виліт з Кишинева</p>
+                        <div class="tour-price">
+                            <span class="current-price">22 000 грн</span>
+                        </div>
+                        <a href="#" class="btn-details">Детальніше</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="services" class="about-services-section">
+            <div class="about-block">
+                <h2>Про нашу туристичну агенцію</h2>
+                <p>Ми допомагаємо втілювати ваші мрії про ідеальний відпочинок у реальність. Вже понад 5 років ми підбираємо перевірені готелі, дбаємо про безпеку кожного клієнта та забезпечуємо підтримку 24/7 під час усієї подорожі.</p>
+            </div>
+
+            <div class="services-block">
+                <h2>Наші послуги</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="icon">✈️</div>
+                        <h3>Підбір пакетних турів</h3>
+                        <p>Повний комплекс: переліт, трансфер, готель, страхування.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">📄</div>
+                        <h3>Візова підтримка</h3>
+                        <p>Допомога в оформленні віз та необхідних документів для подорожі.</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon">🏨</div>
+                        <h3>Бронювання готелів та квитків</h3>
+                        <p>Індивідуальні рішення для самостійних мандрівників.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2>Що говорять наші клієнти</h2>
+            <div class="reviews-container">
+                <blockquote class="review-card">
+                    <p class="review-text">"Відпочинок в Туреччині пройшов неймовірно! Готель підібрали ідеально під наші вимоги. Дуже вдячні за постійну підтримку та турботу!"</p>
+                    <cite class="review-author">
+                        <strong>Олена та Михайло</strong>
+                        <span>Відпочивали в Кемері</span>
+                    </cite>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p class="review-text">"Вперше літала через це агентство в тур Європою. Організація на вищому рівні, жодних затримок, чудові екскурсоводи. Рекомендую!"</p>
+                    <cite class="review-author">
+                        <strong>Тетяна</strong>
+                        <span>Тур "Магія Парижу"</span>
+                    </cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts" class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-contacts">
+                <h3>Контакти</h3>
+                <p>📍 м. Київ, вул. Центральна, 12, офіс 5</p>
+                <p>📞 <a href="tel:+380000000000">+38 (000) 000-00-00</a></p>
+                <p>✉️ <a href="mailto:info@travel-agency.com">info@travel-agency.com</a></p>
+            </div>
+
+            <div class="footer-socials">
+                <h3>Ми в соцмережах</h3>
+                <ul>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">Telegram</a></li>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Публічна оферта</a></li>
+                    <li><a href="#">Часті питання (FAQ)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Туристична агенція. Всі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
