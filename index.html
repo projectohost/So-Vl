@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Головна сторінка | Туристична агенція</title>
-   <link rel="stylesheet" href="styles.css">
-    </head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
 <body>
 
     <header class="main-header">
@@ -17,20 +19,15 @@
         <nav class="main-navigation">
             <ul>
                 <li><a href="#hero">Головна</a></li>
-                <li><a href="#tours">Гарячі путівки</a></li>
+                <!-- Замінено гарячі путівки на посилання до каталогу -->
+                <li><a href="catalog.html">Каталог турів</a></li>
                 <li><a href="#services">Послуги та Про нас</a></li>
                 <li><a href="#reviews">Відгуки</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
         </nav>
-        
+
         <div class="header-user-actions">
-            <a href="/favorites" class="nav-icon-link" title="Обране">
-                <span class="icon">❤️</span> <span class="text">Обране</span>
-            </a>
-            <a href="/booked" class="nav-icon-link" title="Заброньовано">
-                <span class="icon">💼</span> <span class="text">Заброньовано</span>
-            </a>
             <a href="tel:+380000000000" class="btn-phone">+38 (000) 000-00-00</a>
         </div>
     </header>
@@ -40,117 +37,71 @@
             <div class="hero-content">
                 <h1>Світ чекає на тебе. Знайди свій ідеальний відпочинок</h1>
                 <p>Найкращі пропозиції та незабутні емоції за кілька кліків</p>
-                
-                <form class="tour-search-form">
-                    <div class="form-group">
-                        <label for="destination">Куди:</label>
-                        <input type="text" id="destination" placeholder="Країна, місто або готель">
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Коли:</label>
-                        <input type="date" id="date">
-                    </div>
-                    <div class="form-group">
-                        <label for="duration">Кількість ночей:</label>
-                        <select id="duration">
-                            <option value="7">7-9 ночей</option>
-                            <option value="10">10-12 ночей</option>
-                            <option value="14">14+ ночей</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn-search">Знайти тур</button>
-                </form>
-            </div>
-        </section>
 
-        <section id="tours" class="tours-section">
-            <h2>Гарячі путівки та популярні напрямки</h2>
-            
-            <div class="tours-filter">
-                <button class="active">Гарячі тури</button>
-                <button>Пляжний відпочинок</button>
-                <button>Екскурсії</button>
-            </div>
-
-            <div class="tours-grid">
-                <article class="tour-card">
-                    <img src="egypt.jpg" alt="Відпочинок в Єгипті">
-                    <div class="tour-card-content">
-                        <span class="badge-hot">Гарячий!</span>
-                        <h3>Шарм-ель-Шейх, Єгипет</h3>
-                        <p class="hotel-rating">★★★★★</p>
-                        <p class="tour-details">7 ночей • Все включено • Виліт з Варшави</p>
-                        <div class="tour-price">
-                            <span class="old-price">24 000 грн</span>
-                            <span class="current-price">18 500 грн</span>
-                        </div>
-                        <a href="#" class="btn-details">Детальніше</a>
-                    </div>
-                </article>
-
-                <article class="tour-card">
-                    <img src="turkey.jpg" alt="Відпочинок в Туреччині">
-                    <div class="tour-card-content">
-                        <h3>Анталія, Туреччина</h3>
-                        <p class="hotel-rating">★★★★</p>
-                        <p class="tour-details">9 ночей • Все включено • Виліт з Кишинева</p>
-                        <div class="tour-price">
-                            <span class="current-price">22 000 грн</span>
-                        </div>
-                        <a href="#" class="btn-details">Детальніше</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="services" class="about-services-section">
-            <div class="about-block">
-                <h2>Про нашу туристичну агенцію</h2>
-                <p>Ми допомагаємо втілювати ваші мрії про ідеальний відпочинок у реальність. Вже понад 5 років ми підбираємо перевірені готелі, дбаємо про безпеку кожного клієнта та забезпечуємо підтримку 24/7 під час усієї подорожі.</p>
-            </div>
-
-            <div class="services-block">
-                <h2>Наші послуги</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <div class="icon">✈️</div>
-                        <h3>Підбір пакетних турів</h3>
-                        <p>Повний комплекс: переліт, трансфер, готель, страхування.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">📄</div>
-                        <h3>Візова підтримка</h3>
-                        <p>Допомога в оформленні віз та необхідних документів для подорожі.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="icon">🏨</div>
-                        <h3>Бронювання готелів та квитків</h3>
-                        <p>Індивідуальні рішення для самостійних мандрівників.</p>
-                    </div>
+                <!-- Форму пошуку видалено. Додано кнопку до каталогу -->
+                <div class="hero-actions">
+                    <a href="catalog.html" class="btn-catalog">До каталогу</a>
                 </div>
             </div>
         </section>
 
-        <section id="reviews" class="reviews-section">
-            <h2>Що говорять наші клієнти</h2>
-            <div class="reviews-container">
-                <blockquote class="review-card">
-                    <p class="review-text">"Відпочинок в Туреччині пройшов неймовірно! Готель підібрали ідеально під наші вимоги. Дуже вдячні за постійну підтримку та турботу!"</p>
-                    <cite class="review-author">
-                        <strong>Олена та Михайло</strong>
-                        <span>Відпочивали в Кемері</span>
-                    </cite>
-                </blockquote>
+        <!-- Секцію з гарячими путівками повністю видалено -->
 
-                <blockquote class="review-card">
-                    <p class="review-text">"Вперше літала через це агентство в тур Європою. Організація на вищому рівні, жодних затримок, чудові екскурсоводи. Рекомендую!"</p>
-                    <cite class="review-author">
-                        <strong>Тетяна</strong>
-                        <span>Тур "Магія Парижу"</span>
-                    </cite>
-                </blockquote>
+        <section id="reviews" class="reviews-section">
+    <h2>Що говорять наші клієнти</h2>
+    
+    <!-- Додано id="reviews-container" -->
+    <div class="reviews-container" id="reviews-container">
+        <blockquote class="review-card">
+            <p class="review-text">"Відпочинок в Туреччині пройшов неймовірно! Готель підібрали ідеально під наші вимоги. Дуже вдячні за постійну підтримку та турботу!"</p>
+            <cite class="review-author">
+                <strong>Олена та Михайло</strong>
+                <span>Відпочивали в Кемері</span>
+            </cite>
+        </blockquote>
+
+        <blockquote class="review-card">
+            <p class="review-text">"Вперше літала через це агентство в тур Європою. Організація на вищому рівні, жодних затримок, чудові екскурсоводи. Рекомендую!"</p>
+            <cite class="review-author">
+                <strong>Тетяна</strong>
+                <span>Тур "Магія Парижу"</span>
+            </cite>
+        </blockquote>
+    </div>
+
+    <div class="add-review-block">
+        <h3>Залишити свій відгук</h3>
+        <form class="review-form">
+            <div class="form-group">
+                <label for="review-name">Ваше ім'я:</label>
+                <input type="text" id="review-name" required placeholder="Наприклад, Олексій">
             </div>
-        </section>
+            
+            <!-- ====== НОВИЙ БЛОК: СИСТЕМА ЗІРОК ====== -->
+            <div class="form-group">
+                <label>Ваша оцінка:</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="5 зірок">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 зірки">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 зірки">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 зірки">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 зірка">★</label>
+                </div>
+            </div>
+            <!-- ======================================= -->
+
+            <div class="form-group">
+                <label for="review-tour">Куди подорожували:</label>
+                <input type="text" id="review-tour" required placeholder="Наприклад, Хургада, Єгипет">
+            </div>
+            <div class="form-group">
+                <label for="review-message">Ваші враження від поїздки:</label>
+                <textarea id="review-message" rows="4" required placeholder="Опишіть, що вам найбільше сподобалося..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit-review">Надіслати відгук</button>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer id="contacts" class="main-footer">
@@ -185,6 +136,62 @@
             <p>&copy; 2026 Туристична агенція. Всі права захищені.</p>
         </div>
     </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewForm = document.querySelector('.review-form');
+    const reviewsContainer = document.getElementById('reviews-container');
 
+    // Функція, яка створює HTML-картку відгуку та додає її на сторінку
+    function createReviewCard(name, rating, tour, message) {
+        const reviewCard = document.createElement('blockquote');
+        reviewCard.className = 'review-card';
+
+        // Генеруємо рядок із зірочками (наприклад: ★★★★★)
+        const starsHtml = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+
+        reviewCard.innerHTML = `
+            <div class="review-stars">${starsHtml}</div>
+            <p class="review-text">"${message}"</p>
+            <cite class="review-author">
+                <strong>${name}</strong>
+                <span>${tour}</span>
+            </cite>
+        `;
+        
+        reviewsContainer.appendChild(reviewCard);
+    }
+
+    // 1. Завантаження збережених відгуків з пам'яті браузера при відкритті сайту
+    const savedReviews = JSON.parse(localStorage.getItem('travelReviews')) || [];
+    savedReviews.forEach(rev => {
+        createReviewCard(rev.name, rev.rating, rev.tour, rev.message);
+    });
+
+    // 2. Обробка відправки форми
+    reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Зупиняємо перезавантаження сторінки
+
+        // Зчитуємо дані з полів
+        const name = document.getElementById('review-name').value;
+        const tour = document.getElementById('review-tour').value;
+        const message = document.getElementById('review-message').value;
+        const rating = parseInt(document.querySelector('input[name="rating"]:checked').value);
+
+        // Створюємо об'єкт нового відгуку
+        const newReview = { name, rating, tour, message };
+
+        // Додаємо в масив та зберігаємо в LocalStorage
+        savedReviews.push(newReview);
+        localStorage.setItem('travelReviews', JSON.stringify(savedReviews));
+
+        // Одразу рендеримо новий відгук на екрані поруч з іншими
+        createReviewCard(name, rating, tour, message);
+
+        // Очищаємо форму для наступного відгуку
+        reviewForm.reset();
+    });
+});
+</script>
 </body>
+
 </html>
