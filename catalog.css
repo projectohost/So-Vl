@@ -401,3 +401,7 @@ header{
     font-size:18px;
 }
 }
+
+.black-icon{
+    filter: invert(1);
+}

@@ -6,6 +6,7 @@
     <title>Каталог турів</title>
 
     <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="./style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,22 +18,35 @@
 
 <body>
 
-<header>
-
+<header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="./logo.png" alt="Логотип ТА">
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="./index.html#hero">Головна</a></li>
+                <!-- Замінено гарячі путівки на посилання до каталогу -->
+                <li><a href="./catalog.html">Каталог турів</a></li>
+                <li><a href="./index.html#services">Послуги та Про нас</a></li>
+                <li><a href="./index.html#reviews">Відгуки</a></li>
+                <li><a href=".index.html#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-user-actions">
+            <a href="tel:+380000000000" class="btn-phone">+38 (000) 000-00-00</a>
+            <a href="./favorites.html"><i class="fa fa-heart black-icon"></i></a>
+            <a href="./booked.html"><i class="fa fa-clipboard-list black-icon"></i></a>
+        </div>
+    
+        
+    </header>
     <div class="header-content">
         <h1>🌍 Каталог турів</h1>
         <p>Знайди свою ідеальну подорож</p>
-
-        <!-- НАВІГАЦІЯ -->
-        <nav class="nav">
-            <a href="catalog.html"><i class="fa fa-home"></i> Каталог турів</a>
-            <a href="favorites.html"><i class="fa fa-heart"></i> Обране</a>
-            <a href="booked.html"><i class="fa fa-clipboard-list"></i> Заброньовано</a>
-        </nav>
-
     </div>
-
-</header>
 
 <!-- ФІЛЬТРИ -->
 <section class="filters">
