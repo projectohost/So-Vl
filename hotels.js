@@ -223,6 +223,8 @@ const hotels = {
 
 const hotelsData = hotels[country] || [];
 
+
+
 function render(){
 
     container.innerHTML = "";
@@ -263,44 +265,40 @@ function render(){
 render();
 let selectedHotel = null;
 
+// Відкрити форму
 function openBooking(index){
 
     selectedHotel = hotelsData[index];
 
-    const modal = document.createElement("div");
+    document.getElementById("hotelName").textContent =
+        selectedHotel.name;
 
-    modal.classList.add("modal");
+    document.getElementById("hotelCountry").textContent =
+        country;
 
-    modal.innerHTML = `
-        <div class="modal-content">
+    document.getElementById("hotelPrice").textContent =
+        selectedHotel.price;
 
-            <h2>Бронювання</h2>
-
-            <p><b>${selectedHotel.name}</b></p>
-
-            <input id="name" placeholder="Ваше ім'я">
-            <input id="phone" placeholder="Телефон">
-
-            <button onclick="confirmBooking()">Підтвердити</button>
-
-        </div>
-    `;
-
-    document.body.appendChild(modal);
-
-    modal.onclick = (e)=>{
-        if(e.target === modal){
-            modal.remove();
-        }
-    };
+    document.getElementById("bookingModal").style.display = "flex";
 }
 
+// Закрити форму
+function closeBooking(){
+
+    document.getElementById("bookingModal").style.display = "none";
+
+    document.getElementById("userName").value = "";
+    document.getElementById("userPhone").value = "";
+
+}
+
+// Підтвердити бронювання
 function confirmBooking(){
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
+    const name = document.getElementById("userName").value.trim();
+    const phone = document.getElementById("userPhone").value.trim();
 
-    if(!name || !phone){
+    if(name === "" || phone === ""){
         alert("Заповніть всі поля!");
         return;
     }
@@ -308,9 +306,9 @@ function confirmBooking(){
     const booking = {
         hotel: selectedHotel.name,
         country: country,
-        name,
-        phone,
-        price: selectedHotel.price
+        price: selectedHotel.price,
+        name: name,
+        phone: phone
     };
 
     let list = JSON.parse(localStorage.getItem("bookedHotels")) || [];
@@ -319,7 +317,7 @@ function confirmBooking(){
 
     localStorage.setItem("bookedHotels", JSON.stringify(list));
 
-    alert("Бронювання успішне!");
+    alert("Бронювання успішно оформлено!");
 
-    document.querySelector(".modal").remove();
+    closeBooking();
 }

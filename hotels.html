@@ -48,6 +48,41 @@
 
 </section>
 
+
+<div id="bookingModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeBooking()">&times;</span>
+
+        <h2>Бронювання готелю</h2>
+
+        <h3 id="hotelName"></h3>
+
+        <p><b>Країна:</b> <span id="hotelCountry"></span></p>
+
+        <p><b>Ціна:</b> <span id="hotelPrice"></span>$</p>
+
+        <input
+            type="text"
+            id="userName"
+            placeholder="Ваше ім'я"
+        >
+
+        <input
+            type="tel"
+            id="userPhone"
+            placeholder="Номер телефону"
+        >
+
+        <button onclick="confirmBooking()">
+            Підтвердити бронювання
+        </button>
+
+    </div>
+
+</div>
+
 <script src="hotels.js"></script>
 
 </body>
