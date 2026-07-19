@@ -1,7 +1,7 @@
 const container = document.getElementById("booked");
 
 let booked = JSON.parse(localStorage.getItem("bookedHotels")) || [];
-console.log(booked)
+console.log(booked);
 function render(){
 
     if(booked.length === 0){
@@ -10,30 +10,33 @@ function render(){
     }
 
     container.innerHTML = booked.map((b, index) => `
-        <div class="card">
+    <div class="card">
 
-            <div class="info">
+        <div class="info">
 
-                <h2>${b.hotel}</h2>
-                <p>🌍 ${b.country}</p>
-                <label>Кількість людей</label>
-                <select id="peopleSelect"></select>
+            <h2>${b.hotel}</h2>
 
-                <label>Кількість днів</label>
-                <select id="daysSelect"></select>
-                <p>👤 ${b.name}</p>
-                <p>📞 ${b.phone}</p>
+            <p>🌍 ${b.country}</p>
 
-                <p class="price">${b.price}$</p>
+            <p>👥 Кількість людей: ${b.people}</p>
 
-                <button onclick="removeBooking(${index})">
-                    🗑 Скасувати
-                </button>
+            <p>📅 Кількість днів: ${b.days}</p>
 
-            </div>
+            <p>👤 ${b.name}</p>
+
+            <p>📞 ${b.phone}</p>
+
+            <p class="price">${b.price}$</p>
+
+            <button onclick="removeBooking(${index})">
+                🗑 Скасувати
+            </button>
 
         </div>
-    `).join("");
+
+    </div>
+`).join("");
+  
 }
 
 function removeBooking(index){

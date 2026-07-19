@@ -85,32 +85,32 @@ const hotels = {
             name: "Rome Cavalieri",
             image: "https://images.unsplash.com/photo-1529260830199-42c24126f198",
             desc: "Люкс готель у Римі.",
-            people: 2 - 12,
-            days: 5 - 10,
+            people: "2 - 12",
+            days: "5 - 10",
             price: 1400
         },
         {
             name: "Hotel Milano Scala",
             image: "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
             desc: "Еко-готель у центрі Мілана.",
-            people: 2 - 10,
-            days: 4 - 10,
+            people: "2 - 10",
+            days: "4 - 10",
             price: 1100
         },
         {
             name: "Grand Hotel Rimini",
             image: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFizK3YSwjJ2Cy5TmKxIPZJ759f7jFbNGw5KMFFkODz_b3atNBmgfrpjU_xtw2dqvFEePicFW46nietmomu_2Bre_WRWLXlKGJITrgXSUrNMvAf9tUngiKY6Ib4xyYMGRWDocNZYg=w324-h312-n-k-no",
             desc: "Класика біля моря.",
-            people: 2 - 8,
-            days: 610,
+            people: "2 - 8",
+            days: "6 - 10",
             price: 1000
         },
         {
             name: "Venice Palace",
             image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff",
             desc: "Готель біля каналів Венеції.",
-            people: 2 - 6,
-            days: 5 - 8,
+            people: "2 - 6",
+            days: "5 - 8",
             price: 1300
         }
     ],
@@ -119,32 +119,32 @@ const hotels = {
             name: "Atlantica Grand Resort",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcQTwx1dnm1x9MX24f7CAWYpnZay98LR6XMLuHrI5BA&s=10",
             desc: "Розкішний курорт на острові Родос.",
-            people: 2 - 4,
-            days: 6 - 8,
+            people: "2 - 4",
+            days: "6 - 8",
             price: 950
         },
         {
             name: "Creta Palace",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRksXrlZPnq4tB4XUB79mJJ0aIzVef0dvHF5JG9ZrS_XQ&s=10",
             desc: "Сімейний готель на Криті.",
-            people: 2 - 5,
-            days: 7 - 9,
+            people: "2 - 5",
+            days: "7 - 9",
             price: 880
         },
         {
             name: "Santorini View Hotel",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCtdsnniWVUZUA5M2Sn9mU8rCRCtOLjMfpYXpjvNqlw&s=10",
             desc: "Неймовірний вид на кальдеру.",
-            people: 2,
-            days: 5,
+            people: "2 - 7",
+            days: "5 - 10",
             price: 1200
         },
         {
             name: "Athens Luxury Suites",
             image: "https://images.unsplash.com/photo-1555993539-1732b0258235",
             desc: "У центрі Афін біля Акрополя.",
-            people: 2 - 8,
-            days: 4 - 8,
+            people: "2 - 8",
+            days: "4 - 8",
             price: 700
         }
     ],
@@ -154,32 +154,32 @@ const hotels = {
             name: "W Barcelona",
             image: "https://images.unsplash.com/photo-1583422409516-2895a77efded",
             desc: "Готель-парус біля моря.",
-            people: 2 - 3,
-            days: 7 - 9,
+            people: "2 - 3",
+            days: "7 - 9",
             price: 1300
         },
         {
             name: "Hotel Arts Barcelona",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiF9ISLLrSNJnexlpEuua62curfiethHh8eJrl9mDTXA&s=10",
             desc: "Преміум клас у Барселоні.",
-            people: 2 - 7,
-            days: 6 - 9,
+            people: "2 - 7",
+            days: "6 - 9",
             price: 1200
         },
         {
             name: "Ritz Madrid",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR6HNdjZoVUmgxT2Lb3FQ67p8dILdl3FsInpL2fqeO2A&s=10",
             desc: "Класичний люкс у центрі.",
-            people: 2 - 7,
-            days: 5 - 8,
+            people: "2 - 7",
+            days: "5 - 8",
             price: 1100
         },
         {
             name: "Ibiza Beach Resort",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1PZruLjz06hZO81n97uPT0oo3u05YeOuRudFSlnzMxg&s=10",
             desc: "Для вечірок та відпочинку.",
-            people: 2 - 9,
-            days: 7 - 12,
+            people: "2 - 9",
+            days: "7 - 12",
             price: 1400
         }
     ],
@@ -189,32 +189,32 @@ const hotels = {
             name: "Hotel de Crillon Paris",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgMFBAFgDQoBIKAie9yRLxvwLYihwbVsRrGmYHYZ4HA&s=10",
             desc: "Люкс готель біля Лувру.",
-            people: 2 - 5,
-            days: 5 - 7,
+            people: "2 - 5",
+            days: "5 - 7",
             price: 1600
         },
         {
             name: "Le Negresco Nice",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLOlyrI8m2qXZC-QVDBH4Jhqj7Tt4Cxp1Z2qc0XjWSQ&s=10",
             desc: "Класика Лазурного узбережжя.",
-            people: 2 - 6,
-            days: 6 - 8,
+            people: "2 - 6",
+            days: "6 - 8",
             price: 1300
         },
         {
             name: "Hotel Martinez Cannes",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLg54_iv3fVPv4Kjz9qm_IxOCDBlHfmDIB18O3bGL7A&s",
             desc: "Відомий готель Каннського кінофестивалю.",
-            people: 2 - 3,
-            days: 5 - 7,
+            people: "2 - 3",
+            days: "5 - 7",
             price: 1450
         },
         {
             name: "Paris Opera Hotel",
             image: "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
             desc: "Центр Парижа, комфорт.",
-            people: 2 - 8,
-            days: 4 - 8,
+            people: "2 - 8",
+            days: "4 - 8",
             price: 1000
         }
     ]
@@ -321,27 +321,66 @@ function closeBooking() {
 
 // Підтвердити бронювання
 function confirmBooking() {
+
     const people = document.getElementById("peopleSelect").value;
     const days = document.getElementById("daysSelect").value;
+console.log(people)
+console.log(days)
     const name = document.getElementById("userName").value.trim();
     const phone = document.getElementById("userPhone").value.trim();
 
-    if (name === "" || phone === "") {
+
+    if(name === "" || phone === ""){
         alert("Заповніть всі поля!");
         return;
     }
 
 
-
     const booking = {
+
         hotel: selectedHotel.name,
+
         country: country,
-        people: people,
-        days: days,
+
+        // вибрані дані
+        people: people + " осіб",
+
+        days: days + " днів",
+
         price: selectedHotel.price,
+
         name: name,
+
         phone: phone
     };
+
+
+    let list = JSON.parse(localStorage.getItem("bookedHotels")) || [];
+
+
+    list.push(booking);
+
+
+    localStorage.setItem(
+        "bookedHotels",
+        JSON.stringify(list)
+    );
+
+
+    alert("Бронювання успішно оформлено!");
+
+    closeBooking();
+}
+    const booking = {
+    hotel: selectedHotel.name,
+    country: country,
+    people: people,
+    days: days,
+    price: selectedHotel.price,
+    name: name,
+    phone: phone
+};
+
     let list = JSON.parse(localStorage.getItem("bookedHotels")) || [];
 
     list.push(booking);
@@ -351,4 +390,3 @@ function confirmBooking() {
     alert("Бронювання успішно оформлено!");
 
     closeBooking();
-}
