@@ -1,7 +1,7 @@
 const container = document.getElementById("booked");
 
-let booked = JSON.parse(localStorage.getItem("booked")) || [];
-
+let booked = JSON.parse(localStorage.getItem("bookedHotels")) || [];
+console.log(booked)
 function render(){
 
     if(booked.length === 0){
@@ -14,11 +14,13 @@ function render(){
 
             <div class="info">
 
-                <h2>${b.title}</h2>
-
+                <h2>${b.hotel}</h2>
                 <p>🌍 ${b.country}</p>
-                <p>📅 ${b.days} днів</p>
-                <p>👥 Людей: ${b.people}</p>
+                <label>Кількість людей</label>
+                <select id="peopleSelect"></select>
+
+                <label>Кількість днів</label>
+                <select id="daysSelect"></select>
                 <p>👤 ${b.name}</p>
                 <p>📞 ${b.phone}</p>
 
