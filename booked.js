@@ -43,7 +43,7 @@ function removeBooking(index){
 
     booked.splice(index, 1);
 
-    localStorage.setItem("booked", JSON.stringify(booked));
+    localStorage.setItem("bookedHotels", JSON.stringify(booked));
 
     render();
 }
