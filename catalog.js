@@ -58,6 +58,7 @@ const country = document.getElementById("country");
 // РЕНДЕР
 // =====================
 
+
 function render(data){
 
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -105,6 +106,7 @@ function render(data){
 // =====================
 // ПОДІЇ
 // =====================
+
 
 function addEvents(){
 

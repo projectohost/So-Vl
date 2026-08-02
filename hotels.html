@@ -75,10 +75,10 @@
             placeholder="Номер телефону"
         >
         <label>Кількість людей</label>
-        <select id="peopleSelect"></select>
+        <select id="peopleSelect" onchange="People(this.value)"></select>
 
         <label>Кількість днів</label>
-        <select id="daysSelect"></select>
+        <select id="daysSelect" onchange="Days(this.value)"></select>
 
         <button onclick="confirmBooking()">
             Підтвердити бронювання

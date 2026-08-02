@@ -294,17 +294,49 @@ function fillSelect(selectId, text) {
         }
     }
 }
+
+
+function People(n) {
+
+    const minPeople = Number(selectedHotel.people.match(/\d+/)[0]);
+    const labelPrice = document.getElementById("hotelPrice");    
+    price = selectedHotel.price;
+
+    if (n > minPeople) {
+        price += (n - minPeople) * 50;
+    }
+    else{
+        price = selectedHotel.price
+    }
+    labelPrice.textContent = price
+}
+
+function Days(n) {
+    const minDays = Number(selectedHotel.days.match(/\d+/)[0]);
+    const labelPrice = document.getElementById("hotelPrice");
+    price = selectedHotel.price
+    if (n > minDays) {
+        price += (n - minDays) * 50;
+        
+    }   else{
+        price = selectedHotel.price
+    }   
+    labelPrice.textContent=  price
+}
+
 // Відкрити форму
 function openBooking(index) {
 
     selectedHotel = hotelsData[index];
-
+    // console.log(selectedHotel)
     document.getElementById("hotelName").textContent = selectedHotel.name;
     document.getElementById("hotelCountry").textContent = country;
     document.getElementById("hotelPrice").textContent = selectedHotel.price;
 
     fillSelect("peopleSelect", selectedHotel.people);
     fillSelect("daysSelect", selectedHotel.days);
+
+
 
     document.getElementById("bookingModal").style.display = "flex";
 }
@@ -324,33 +356,45 @@ function confirmBooking() {
 
     const people = document.getElementById("peopleSelect").value;
     const days = document.getElementById("daysSelect").value;
-console.log(people)
-console.log(days)
+    console.log(people)
+    console.log(days)
     const name = document.getElementById("userName").value.trim();
     const phone = document.getElementById("userPhone").value.trim();
 
 
-    if(name === "" || phone === ""){
+    if (name === "" || phone === "") {
         alert("Заповніть всі поля!");
         return;
     }
 
 
+    const peopleCount = Number(people);
+    const daysCount = Number(days);
+
+    // мінімальна кількість людей і днів
+    const minPeople = Number(selectedHotel.people.match(/\d+/)[0]);
+    const minDays = Number(selectedHotel.days.match(/\d+/)[0]);
+
+    let finalPrice = selectedHotel.price;
+
+    // +50$ за кожну додаткову людину
+    if (peopleCount > minPeople) {
+        finalPrice += (peopleCount - minPeople) * 50;
+    }
+
+    // +50$ за кожен додатковий день
+    if (daysCount > minDays) {
+        finalPrice += (daysCount - minDays) * 50;
+    }
+
     const booking = {
 
         hotel: selectedHotel.name,
-
         country: country,
-
-        // вибрані дані
         people: people + " осіб",
-
         days: days + " днів",
-
-        price: selectedHotel.price,
-
+        price: finalPrice,
         name: name,
-
         phone: phone
     };
 
@@ -371,22 +415,3 @@ console.log(days)
 
     closeBooking();
 }
-    const booking = {
-    hotel: selectedHotel.name,
-    country: country,
-    people: people,
-    days: days,
-    price: selectedHotel.price,
-    name: name,
-    phone: phone
-};
-
-    let list = JSON.parse(localStorage.getItem("bookedHotels")) || [];
-
-    list.push(booking);
-
-    localStorage.setItem("bookedHotels", JSON.stringify(list));
-
-    alert("Бронювання успішно оформлено!");
-
-    closeBooking();
