@@ -666,3 +666,68 @@ section h2::after {
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
+
+/* Контейнер кнопок */
+.favorite-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+/* Кнопка "Переглянути готелі" */
+.hotels-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hotels-btn:hover {
+    background: #217dbb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Кнопка "Видалити" */
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Ефект при натисканні */
+.hotels-btn:active,
+.delete-btn:active {
+    transform: scale(0.96);
+}
+
+/* Для маленьких екранів */
+@media (max-width: 600px) {
+
+    .favorite-buttons {
+        flex-direction: column;
+    }
+
+    .hotels-btn,
+    .delete-btn {
+        width: 100%;
+    }
+}

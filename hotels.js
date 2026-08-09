@@ -49,7 +49,7 @@ const hotels = {
     "Єгипет": [
         {
             name: "Rixos Sharm El Sheikh",
-            image: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFQ_DO3Z14u0qMJe7V0WUookV4tfMcA0xo9LAEClgqF8wUou9CXTKlyPi2VbtJlLmx8j0U-kyAYQe-5km8fvkOlQdyfK5oqj3lJ1Pb8c_dGXFKE6o7XI4rjUDxMs1WNVyfCwaFp=s680-w680-h510-rw",
+            image: "https://lh3.googleusercontent.com/proxy/ivdsemBelEP8h9quGfGxsM4rolht0ujdjs0pAX_zWhLv6fdSI3IjX2IzJmYskMSjjcWFvY--BeKtU_ulDchn05vC2ISEFx56msjK4zklhPZ_JBCs7EgvX0IYZJveNxyMXaMBnC_LIQbmVJwpijTkFI7q3K3TVg=s680-w680-h510-rw",
             desc: "Червоне море, all inclusive.",
             people: "2–9 осіб",
             days: "7–15 днів",
