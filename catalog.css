@@ -211,6 +211,7 @@ header{
     border:none;
 
     border-radius:10px;
+    padding: 15px 0;
 
     background:linear-gradient(45deg,#00c6ff,#0072ff);
 
@@ -404,4 +405,8 @@ header{
 
 .black-icon{
     filter: invert(1);
+}
+
+.header-content{
+    text-align: center;
 }
