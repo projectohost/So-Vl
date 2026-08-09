@@ -296,33 +296,59 @@ function fillSelect(selectId, text) {
 }
 
 
-function People(n) {
 
+// Перерахунок ціни
+// =========================
+
+function updatePrice() {
+
+    if (!selectedHotel) return;
+
+    const people = Number(document.getElementById("peopleSelect").value);
+    const days = Number(document.getElementById("daysSelect").value);
+
+    // Мінімальна кількість людей
     const minPeople = Number(selectedHotel.people.match(/\d+/)[0]);
-    const labelPrice = document.getElementById("hotelPrice");    
-    price = selectedHotel.price;
 
-    if (n > minPeople) {
-        price += (n - minPeople) * 50;
+    // Мінімальна кількість днів
+    const minDays = Number(selectedHotel.days.match(/\d+/)[0]);
+
+    // Початкова ціна
+    let newPrice = selectedHotel.price;
+
+    // +50$ за кожну додаткову людину
+    if (people > minPeople) {
+        newPrice += (people - minPeople) * 50;
     }
-    else{
-        price = selectedHotel.price
+
+    // +50$ за кожен додатковий день
+    if (days > minDays) {
+        newPrice += (days - minDays) * 50;
     }
-    labelPrice.textContent = price
+
+    // Показуємо нову ціну
+    document.getElementById("hotelPrice").textContent = newPrice + "$";
 }
+
+
+// =========================
+// Зміна кількості людей
+// =========================
+
+function People(n) {
+    updatePrice();
+}
+
+
+// =========================
+// Зміна кількості днів
+// =========================
 
 function Days(n) {
-    const minDays = Number(selectedHotel.days.match(/\d+/)[0]);
-    const labelPrice = document.getElementById("hotelPrice");
-    price = selectedHotel.price
-    if (n > minDays) {
-        price += (n - minDays) * 50;
-        
-    }   else{
-        price = selectedHotel.price
-    }   
-    labelPrice.textContent=  price
+    updatePrice();
 }
+
+
 
 // Відкрити форму
 function openBooking(index) {
